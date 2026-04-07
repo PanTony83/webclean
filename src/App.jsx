@@ -152,7 +152,7 @@ function App() {
           <div className="footer-logo">石原研洗</div>
           <div className="footer-contact">
             <div className="contact-item">
-              <FaPhoneAlt /> 0800-123-456
+              <FaPhoneAlt /> 0800-***-***
             </div>
             <div className="contact-item">
               <FaComments /> LINE ID: @********
