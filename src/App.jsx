@@ -29,7 +29,7 @@ function App() {
 
       {/* Hero Section */}
       <section className="hero">
-        <img src="/hero_section.png" alt="Hero Background" className="hero-bg" />
+        <img src={`${import.meta.env.BASE_URL}hero_section.png`} alt="Hero Background" className="hero-bg" />
         <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
@@ -49,7 +49,7 @@ function App() {
         <p className="section-subtitle">看見需求，重新定義最高標準的潔淨</p>
         <div className="story-grid">
           <div className="story-image">
-            <img src="/team_culture.png" alt="Brand Story" />
+            <img src={`${import.meta.env.BASE_URL}team_culture.png`} alt="Brand Story" />
           </div>
           <div className="story-text">
             <h3>「我們不僅清洗冷氣，更守護您的每一次呼吸。」</h3>
@@ -141,7 +141,7 @@ function App() {
             </div>
           </div>
           <div className="culture-image">
-            <img src="/artisan_cleanup.png" alt="Corporate Culture" />
+            <img src={`${import.meta.env.BASE_URL}artisan_cleanup.png`} alt="Corporate Culture" />
           </div>
         </div>
       </section>
