@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaPlay, FaCheckCircle, FaLeaf, FaHandsHelping, FaPhoneAlt, FaComments, FaClock, FaSprayCan, FaShieldAlt } from 'react-icons/fa';
+import { FaCheckCircle, FaLeaf, FaHandsHelping, FaPhoneAlt, FaComments, FaClock, FaSprayCan, FaShieldAlt, FaShoePrints, FaCamera, FaWater } from 'react-icons/fa';
 import './App.css';
 
 function App() {
@@ -45,16 +45,15 @@ function App() {
 
       {/* Brand Story */}
       <section id="about" className="container">
-        <h2 className="section-title">品牌故事</h2>
-        <p className="section-subtitle">看見需求，重新定義最高標準的潔淨</p>
+        <h2 className="section-title">品牌故事 ｜ 寧願慢一點，也要洗得好一點</h2>
         <div className="story-grid">
           <div className="story-image">
             <img src={`${import.meta.env.BASE_URL}team_culture.png`} alt="Brand Story" />
           </div>
           <div className="story-text">
-            <h3>「我們不僅清洗冷氣，更守護您的每一次呼吸。」</h3>
-            <p>一切始於對健康的關懷。創辦人看見許多過敏兒家庭的困擾，發現市面上多數的冷氣清洗僅做表面功夫，甚至使用強酸強鹼的化學洗劑，不僅損害機器，更可能殘留有毒物質。</p>
-            <p>因此，「石原研洗」誕生了。我們堅持無毒、環保與極致的細節，將冷氣清洗升華為一種「職人藝術」。用對待家人的心，仔細洗淨每一片鰭片，帶給您最溫暖、安心的室內空氣。</p>
+            <p>在踏入清洗行業的初期，我們從平台接案做起，累積了無數實戰經驗。然而，我們也看見了市場的隱憂。在激烈的競爭下，許多同業為了衝刺「翻單率」與接單量，不斷壓縮施工時間，逐漸犧牲了應有的服務細節。</p>
+            <p>長期下來，這對花了錢卻得不到相對品質的客戶來說，極不公平。</p>
+            <p>這正是「石原研洗」誕生的契機。我們決定打破業界求快的迷思，建立一個讓技師能在合理報酬下，安心且專注於每一道工序的環境。我們相信，唯有放慢腳步、專注細節，每一次的服務才能真正對得起客戶的信任。</p>
             <a href="#culture" className="btn btn-outline" style={{ marginTop: '1rem' }}>認識我們的團隊</a>
           </div>
         </div>
@@ -63,32 +62,44 @@ function App() {
       {/* Artisan Craftsmanship */}
       <section id="artisan" className="artisan-section">
         <div className="container">
-          <h2 className="section-title">職人工法</h2>
-          <p className="section-subtitle">魔鬼藏在細節裡，五道標準化嚴格清洗程序，不放過任何死角。</p>
+          <h2 className="section-title">職人工法 ｜ 每一道程序，都是為了讓您安心</h2>
+          <p className="section-subtitle">清洗冷氣不該只是把灰塵沖掉就好，我們更在乎施工過程中有沒有把客人的家照顧好。以下是「石原研洗」技師出班時，一定會落實的 6 項標準動作：</p>
           <div className="steps-container">
             <div className="step-card">
               <span className="step-number">1</span>
-              <div className="step-icon"><FaShieldAlt /></div>
-              <h4>無塵防護</h4>
-              <p>鋪設專業防護膠膜與防水墊，百分之百保護您的傢具與牆面不受水花飛濺。</p>
+              <div className="step-icon"><FaShoePrints /></div>
+              <h4>自備專屬室內拖鞋</h4>
+              <p>尊重您的家，從進門的第一步開始。我們的技師一律自備工作用的乾淨拖鞋，絕不共用客人家中的任何物品，保持最基本的衛生與禮貌。</p>
             </div>
             <div className="step-card">
               <span className="step-number">2</span>
-              <div className="step-icon"><FaSprayCan /></div>
-              <h4>深度拆解</h4>
-              <p>由受過專業訓練的技師仔細拆卸外殼、濾網、水盤與風鼓，展露所有藏汙納垢的死角。</p>
+              <div className="step-icon"><FaShieldAlt /></div>
+              <h4>確實的地板與傢俱防護</h4>
+              <p>我們會在施工動線上鋪設防護地墊，並用養生膠帶把冷氣周遭的牆面、傢俱仔細包覆。拆卸下來的冷氣零件也一律放在專用地墊上，絕不讓水滴或髒污弄髒您的地板。</p>
             </div>
             <div className="step-card">
               <span className="step-number">3</span>
-              <div className="step-icon"><FaLeaf /></div>
-              <h4>環保浸泡</h4>
-              <p>使用溫和的生物可降解酵素洗劑，軟化頑垢的同時，不傷機體亦不傷環境。</p>
+              <div className="step-icon"><FaCamera /></div>
+              <h4>施工前後拍照確認</h4>
+              <p>借用您的浴室、洗手台清洗零件時，我們會在動工前與完工後拍照紀錄。確保離開時場地已經復原得乾乾淨淨，沒有留下髒污或造成周邊插座、排水孔的損壞，避免任何爭議，讓雙方都安心。</p>
             </div>
             <div className="step-card">
               <span className="step-number">4</span>
+              <div className="step-icon"><FaWater /></div>
+              <h4>機板雙層防水保護</h4>
+              <p>冷氣清洗最怕進水短路。在沖水前，我們會確實使用「雙層浴帽」將電路板嚴密包覆起來，確實阻擋高壓水氣與噴濺，避免洗完發生受潮故障。</p>
+            </div>
+            <div className="step-card">
+              <span className="step-number">5</span>
+              <div className="step-icon"><FaSprayCan /></div>
+              <h4>依材質選用專用洗劑</h4>
+              <p>我們不拿一桶強效藥水從頭洗到尾。針對脆弱的蒸發器鋁鰭片與外殼塑膠件，我們會分開使用對應的專門洗劑。在洗淨霉斑的同時，保護冷氣原廠的防鏽塗層與塑膠材質不被侵蝕老化。</p>
+            </div>
+            <div className="step-card">
+              <span className="step-number">6</span>
               <div className="step-icon"><FaCheckCircle /></div>
-              <h4>高壓沖洗</h4>
-              <p>以精確控制的水壓將鰭片及風鼓深處的霉斑、灰塵徹底沖洗乾淨，還原最初的亮麗。</p>
+              <h4>試紙檢測，確保洗劑零殘留</h4>
+              <p>就算大量清水沖得再乾淨，我們還是會多做一步。完工前，我們會用酸鹼試紙實際測試蒸發器，確認完全沒有任何洗劑殘留，保證冷氣吹出來的每一口風，對家人和小孩都是絕對安全的。</p>
             </div>
           </div>
         </div>
@@ -97,22 +108,23 @@ function App() {
       {/* Social Responsibility */}
       <section id="social" className="social-section">
         <div className="container">
-          <h2 className="section-title">社會責任</h2>
-          <p className="section-subtitle">與自然共存，我們堅持綠色洗淨，保護水資源與地球。</p>
+          <h2 className="section-title">社會責任 ｜ 石原用心，傳愛齊心</h2>
+          <p className="section-subtitle">我們始終秉持「取之於社會，用之於社會」的理念，將公益融入每一次的日常服務中。</p>
           <div className="stats-grid">
             <div className="stat-item">
-              <h3>100%</h3>
-              <p>選用生物可降解洗劑</p>
+              <h3>100元/台</h3>
+              <p>提撥至品牌專屬公益基金</p>
             </div>
             <div className="stat-item">
-              <h3>20,000+</h3>
-              <p>每年減少公升污染廢水</p>
+              <h3>每18台</h3>
+              <p>轉化為一次免費專業清洗服務</p>
             </div>
             <div className="stat-item">
-              <h3>50+</h3>
-              <p>公益清洗弱勢家庭冷氣</p>
+              <h3>在地里長</h3>
+              <p>深度合作，精準媒合弱勢家庭</p>
             </div>
           </div>
+          <p style={{ textAlign: 'center', marginTop: '2rem', lineHeight: '1.8' }}>讓每一次的除舊佈新，不只清新了家裡的空氣，也溫暖了社會的角落。</p>
         </div>
       </section>
 
@@ -120,22 +132,27 @@ function App() {
       <section id="culture" className="container">
         <div className="culture-grid">
           <div className="culture-text">
-            <h2 className="section-title" style={{ textAlign: 'left' }}>共好的企業文化</h2>
-            <p className="section-subtitle" style={{ textAlign: 'left', marginLeft: 0 }}>快樂且受尊重的員工，是提供極致服務的核心。</p>
-            
+            <h2 className="section-title" style={{ textAlign: 'left' }}>企業文化 ｜ 品牌屬於大家，共創永續價值</h2>
             <div className="culture-features">
               <div className="culture-feature">
                 <div className="culture-icon"><FaHandsHelping /></div>
                 <div>
-                  <h4>完善的技術傳承</h4>
-                  <p>我們建立「師徒制」與定期內部考核，確保每位技師都具備一致的高水準技術與服務態度。</p>
+                  <h4>善待夥伴，回歸初心</h4>
+                  <p>我們深知，優秀的技師是品牌的核心。透過扁平、尊重的團隊合作模式，讓每位技術夥伴都能在健康的環境中發揮所長，從根本鞏固服務品質。</p>
                 </div>
               </div>
               <div className="culture-feature">
                 <div className="culture-icon"><FaCheckCircle /></div>
                 <div>
-                  <h4>安全與健康首位</h4>
-                  <p>配備防滑靜音鞋、符合人體工學的工具，並給予充分的健康檢查，我們像保護客戶一樣保護員工。</p>
+                  <h4>技術行善，善意延續</h4>
+                  <p>將專業技能轉化為回饋社會的力量，讓企業發展與公益關懷並行。</p>
+                </div>
+              </div>
+              <div className="culture-feature">
+                <div className="culture-icon"><FaLeaf /></div>
+                <div>
+                  <h4>守護設備，永續環保</h4>
+                  <p>用心服務每一位客戶，透過深層的潔淨保養，有效降低電器耗能並延長設備使用壽命，實踐對環境的保護。</p>
                 </div>
               </div>
             </div>
