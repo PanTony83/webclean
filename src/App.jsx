@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaCheckCircle, FaLeaf, FaHandsHelping, FaPhoneAlt, FaComments, FaClock, FaSprayCan, FaShieldAlt, FaShoePrints, FaCamera, FaWater } from 'react-icons/fa';
+import { FaCheckCircle, FaLeaf, FaHandsHelping, FaPhoneAlt, FaComments, FaClock, FaSprayCan, FaShieldAlt, FaShoePrints, FaCamera, FaWater, FaHandHoldingUsd, FaSnowflake, FaUsers } from 'react-icons/fa';
 import './App.css';
 
 function App() {
@@ -111,21 +111,27 @@ function App() {
         <div className="container">
           <h2 className="section-title">社會責任 ｜ 石原用心，傳愛齊心</h2>
           <p className="section-subtitle">我們始終秉持「取之於社會，用之於社會」的理念，將公益融入每一次的日常服務中。</p>
-          <div className="stats-grid">
-            <div className="stat-item">
+          <p className="social-chain-label">善的循環，從每一次清洗開始</p>
+          <div className="flow-grid">
+            <div className="flow-item">
+              <div className="flow-icon"><FaHandHoldingUsd /></div>
               <h3>100元/台</h3>
-              <p>提撥至品牌專屬公益基金</p>
+              <p>每次服務提撥至<br/>品牌專屬公益基金</p>
             </div>
-            <div className="stat-item">
+            <div className="flow-arrow" aria-hidden="true">→</div>
+            <div className="flow-item">
+              <div className="flow-icon"><FaSnowflake /></div>
               <h3>每18台</h3>
-              <p>轉化為一次免費專業清洗服務</p>
+              <p>累積轉化為一次<br/>免費專業清洗服務</p>
             </div>
-            <div className="stat-item">
+            <div className="flow-arrow" aria-hidden="true">→</div>
+            <div className="flow-item">
+              <div className="flow-icon"><FaUsers /></div>
               <h3>在地里長</h3>
-              <p>深度合作，精準媒合弱勢家庭</p>
+              <p>深度合作，精準<br/>媒合弱勢家庭</p>
             </div>
           </div>
-          <p style={{ textAlign: 'center', marginTop: '2rem', lineHeight: '1.8' }}>讓每一次的除舊佈新，不只清新了家裡的空氣，也溫暖了社會的角落。</p>
+          <p className="social-closing">讓每一次的除舊佈新，不只清新了家裡的空氣，也溫暖了社會的角落。</p>
         </div>
       </section>
 
@@ -138,21 +144,21 @@ function App() {
               <div className="culture-feature">
                 <div className="culture-icon"><FaHandsHelping /></div>
                 <div>
-                  <h4>善待夥伴，回歸初心</h4>
+                  <h4>善待夥伴 ｜ 回歸初心</h4>
                   <p>我們深知，優秀的技師是品牌的核心。透過扁平、尊重的團隊合作模式，讓每位技術夥伴都能在健康的環境中發揮所長，從根本鞏固服務品質。</p>
                 </div>
               </div>
               <div className="culture-feature">
                 <div className="culture-icon"><FaCheckCircle /></div>
                 <div>
-                  <h4>技術行善，善意延續</h4>
+                  <h4>技術行善 ｜ 善意延續</h4>
                   <p>將專業技能轉化為回饋社會的力量，讓企業發展與公益關懷並行。</p>
                 </div>
               </div>
               <div className="culture-feature">
                 <div className="culture-icon"><FaLeaf /></div>
                 <div>
-                  <h4>守護設備，永續環保</h4>
+                  <h4>守護設備 ｜ 永續環保</h4>
                   <p>用心服務每一位客戶，透過深層的潔淨保養，有效降低電器耗能並延長設備使用壽命，實踐對環境的保護。</p>
                 </div>
               </div>

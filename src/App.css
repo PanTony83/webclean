@@ -185,20 +185,70 @@
 .social-section .section-subtitle {
   opacity: 0.9;
 }
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+.social-chain-label {
   text-align: center;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.5rem;
 }
-.stat-item h3 {
-  font-size: 3.5rem;
+.flow-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.flow-item {
+  flex: 1;
+  max-width: 260px;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.3s ease;
+}
+.flow-item:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+.flow-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
   color: white;
-  margin-bottom: 0.5rem;
+  margin: 0 auto 1.5rem;
 }
-.stat-item p {
+.flow-item h3 {
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+.flow-item p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+.flow-arrow {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+  padding: 0 0.25rem;
+  margin-bottom: 1rem;
+}
+.social-closing {
+  text-align: center;
+  margin-top: 3rem;
+  line-height: 1.8;
   font-size: 1.1rem;
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* Team Culture Section */
@@ -287,9 +337,17 @@
   .hero-title {
     font-size: 3rem;
   }
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .flow-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .flow-item {
+    max-width: 100%;
+  }
+  .flow-arrow {
+    transform: rotate(90deg);
+    text-align: center;
+    margin-bottom: 0;
   }
   .nav-links {
     display: none;
