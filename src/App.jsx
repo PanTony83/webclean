@@ -51,7 +51,8 @@ function App() {
             <img src={`${import.meta.env.BASE_URL}team_culture.png`} alt="Brand Story" />
           </div>
           <div className="story-text">
-            <p>在踏入清洗行業的初期，我們從平台接案做起，累積了無數實戰經驗。然而，我們也看見了市場的隱憂。在激烈的競爭下，許多同業為了衝刺「翻單率」與接單量，不斷壓縮施工時間，逐漸犧牲了應有的服務細節。</p>
+            <p>在踏入清洗行業的初期，我們從平台接案做起，累積了無數實戰經驗。</p>
+            <p>然而，我們也看見了市場的隱憂。在激烈的競爭下，許多同業為了衝刺「翻單率」與接單量，不斷壓縮施工時間，逐漸犧牲了應有的服務細節。</p>
             <p>長期下來，這對花了錢卻得不到相對品質的客戶來說，極不公平。</p>
             <p>這正是「石原研洗」誕生的契機。我們決定打破業界求快的迷思，建立一個讓技師能在合理報酬下，安心且專注於每一道工序的環境。我們相信，唯有放慢腳步、專注細節，每一次的服務才能真正對得起客戶的信任。</p>
             <a href="#culture" className="btn btn-outline" style={{ marginTop: '1rem' }}>認識我們的團隊</a>
@@ -132,7 +133,7 @@ function App() {
       <section id="culture" className="container">
         <div className="culture-grid">
           <div className="culture-text">
-            <h2 className="section-title" style={{ textAlign: 'left' }}>企業文化 ｜ 品牌屬於大家，共創永續價值</h2>
+            <h2 className="section-title">企業文化<br />品牌屬於大家，共創永續價值</h2>
             <div className="culture-features">
               <div className="culture-feature">
                 <div className="culture-icon"><FaHandsHelping /></div>
